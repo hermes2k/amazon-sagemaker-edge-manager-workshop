@@ -15,7 +15,7 @@ class WindTurbineFarmSimulator(object):
         self.n_turbines = n_turbines
         
         # read the raw data. This data was captured from real sensors installed in the mini Wind Turbine
-        self.raw_data = pd.read_csv('../../../data/dataset_wind.csv.gz', compression="gzip", sep=',', low_memory=False).values
+        self.raw_data = pd.read_csv('../../data/dataset_wind.csv.gz', compression="gzip", sep=',', low_memory=False).values
         
         # now create the virtual wind turbines
         self.turbines = [WindTurbine(i, self.raw_data) for i in range(n_turbines)]
