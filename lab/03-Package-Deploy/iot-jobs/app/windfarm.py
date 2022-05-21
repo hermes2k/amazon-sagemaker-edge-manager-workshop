@@ -39,9 +39,9 @@ class WindTurbineFarm(object):
 
         # we need to load the statistics computed in the data prep notebook
         # these statistics will be used to compute normalize the input
-        self.raw_std = np.load('../../../statistics/raw_std.npy')
-        self.mean = np.load('../../../statistics/mean.npy')
-        self.std = np.load('../../../statistics/std.npy')
+        self.raw_std = np.load('../../statistics/raw_std.npy')
+        self.mean = np.load('../../statistics/mean.npy')
+        self.std = np.load('../../statistics/std.npy')
         # then we load the thresholds computed in the training notebook
         # for more info, take a look on the Notebook #2
         self.thresholds = np.load('../../../statistics/thresholds.npy')
